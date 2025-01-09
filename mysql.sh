@@ -56,6 +56,7 @@ fi
 
 netstat -lntp
 systemctl status mysqld
+ps -ef | grep "mysql"
 
 # Assignment
 # check MySQL Server is installed or not, enabled or not, started or not

@@ -53,6 +53,12 @@ else
     echo -e "MySQL root password is already setup...$Y SKIPPING $N" | tee -a $LOG_FILE
 fi
 
+systemctl status mysqld
+VALIDATE $? "system status"
+systemctl list mysql
+netstat -lntp
+ps -ef | grep mysql
+
 # Assignment
 # check MySQL Server is installed or not, enabled or not, started or not
 # implement the above things

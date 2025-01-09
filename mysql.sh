@@ -54,7 +54,6 @@ else
 fi
 
 systemctl status mysqld
-systemctl list mysql
 netstat -lntp
 ps -ef | grep mysql
 

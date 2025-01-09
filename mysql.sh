@@ -55,7 +55,7 @@ fi
 
 
 netstat -lntp
-systemctl status mysqld
+systemctl status mysqld &>>$LOG_FILE 
 ps -ef | grep "mysql"
 
 # Assignment
